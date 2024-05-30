@@ -12,22 +12,19 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    max-width: 800px; /* Keeping the width at 800px */
+    max-width: 800px;
     margin: 20px auto;
     border: 3px solid #931420;
     background-color: #fffded;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 20px; /* Added padding to ensure content doesn't touch the border */
 }
 
 /* Header Styling */
 header {
-    width: 100%;
     padding: 1.5em 0 2em 0;
     background-image: linear-gradient(
         30deg, #ff7e5f 0%, #feb47b 30%, #ff7e5f 50%, #fca5a5 80%, #ff7e5f 100%);
-    text-align: center;
+    text-align: center; /* Center text in header */
 }
 
 header h2 {
@@ -38,7 +35,7 @@ header h2 {
 header h3 {
     font-size: 130%;
     font-style: italic;
-    color: #ffffff;
+    color: #ffffff; /* Ensure contrast for readability */
 }
 
 header img {
@@ -55,7 +52,6 @@ header img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 #nav_menu ul li {
@@ -93,57 +89,19 @@ header img {
 
 /* Main Content Styling */
 main {
-    flex: 3;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 20px; /* Add padding to main content */
 }
 
-section {
-    padding: 20px;
-}
-
-section h2 {
+main h2 {
     margin-bottom: 10px;
 }
 
-section p {
+main p {
     margin-bottom: 20px;
-}
-
-/* Right Sidebar Styling */
-aside {
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-left: 3px solid #931420;
-}
-
-aside h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-aside ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-aside ul li {
-    margin-bottom: 10px;
-}
-
-aside ul li a {
-    text-decoration: none;
-    color: #800000;
-}
-
-aside ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Footer Styling */
 footer {
-    width: 100%;
     text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
@@ -183,13 +141,14 @@ footer {
     }
 
     aside {
-        width: 100%;
-        order: 1;
+        width: 95%;
+        float: none;
+        padding: 0 2.5% 20px 2.5%;
     }
 
-    main {
-        width: 100%;
-        order: 2;
+    section {
+        float: none;
+        width: 95%;
     }
 
     article img {
