@@ -12,7 +12,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    max-width: 1000px;
+    max-width: 800px; /* Keeping the width at 800px */
     margin: 20px auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -95,6 +95,7 @@ header img {
 main {
     flex: 3;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 section {
